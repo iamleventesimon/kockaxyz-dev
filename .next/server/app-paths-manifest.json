@@ -1,0 +1,8 @@
+{
+  "/api/auth/[auth0]/route": "app/api/auth/[auth0]/route.js",
+  "/kocka-kviz/page": "app/kocka-kviz/page.js",
+  "/gomb-kviz/page": "app/gomb-kviz/page.js",
+  "/page": "app/page.js",
+  "/teglatest-kviz/page": "app/teglatest-kviz/page.js",
+  "/kvizek/page": "app/kvizek/page.js"
+}

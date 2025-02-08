@@ -4,8 +4,8 @@ body {
 }
 
 code {
-  white-space: pre-wrap; 
-  word-break: break-all; 
+  white-space: pre-wrap;
+  word-break: break-all;
 }
 
 p code {
@@ -31,7 +31,7 @@ p code {
 
 .nav-item.dropdown .dropdown-item .navbar-item {
   width: 100%;
-  padding: .55rem 1.5rem;
+  padding: 0.55rem 1.5rem;
 }
 
 .result-block-container .result-block {
@@ -47,15 +47,11 @@ p code {
   background-color: #4a37be !important;
 }
 
-
-
-
 .nav-link {
   color: white !important;
   font-weight: 800 !important;
   padding: 0.5rem !important;
   border-radius: 11px !important;
-  
 }
 
 .nav-link:hover {
@@ -63,3 +59,178 @@ p code {
   background-color: white !important;
 }
 
+.quiz-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.quiz-form {
+  margin-bottom: 30px;
+}
+
+.question {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.answer-options label {
+  margin-right: 30px;
+}
+
+.answer-text {
+  font-size: 1.1em;
+}
+.quiz-containerkocka {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.quiz-formkocka {
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  gap: 20px;
+  width: 100%;
+}
+
+.questionkocka {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.answer-optionskocka label {
+  margin-right: 30px;
+}
+
+.answer-textkocka {
+  font-size: 1.1em;
+}
+/* kocka,teglalap,gomb
+.submit-button {
+  background-color: #4a37be;
+  color: white;
+  padding: 8px 15px;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+  font-size: 1em;
+  border-radius: 11px;
+  border: "none";
+  font-weight: 760;
+  font-size: 15px;
+  width: 340px;
+  position: absolute;
+
+  left: 870px;
+}
+.submit-button3 {
+  display: flex;
+  background-color: #4a37be;
+  color: white;
+  padding: 8px 15px;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+  font-size: 1em;
+  border-radius: 11px;
+  border: "none";
+  font-weight: 760;
+  font-size: 15px;
+  width: 340px;
+}
+.question {
+  font-size: 16px;
+}
+.answer-text {
+  font-size: 16px;
+}
+.input-field {
+  background-color: rgb(255, 255, 255);
+
+  color: rgb(0, 0, 0);
+  cursor: text;
+  display: block;
+  font-weight: 500;
+  text-align: center;
+  height: 35px;
+  border-color: gainsboro;
+}
+.quiz-form1 label {
+  display: flex;
+  padding-left: 98px;
+  gap: 10px;
+}
+.quiz-form2 label {
+  display: flex;
+  padding-left: 98px;
+  text-align: center;
+}
+.quiz-form2 input {
+  display: flex;
+  margin-top: -18px;
+}
+.quiz-form3 label {
+  display: flex;
+  padding-left: 158px;
+}
+.quiz-form3 input {
+  display: flex;
+  margin-top: 18px;
+  position: absolute;
+
+  margin-left: -50px;
+}
+.quiz-form3 div.harmadik {
+  display: flex;
+  margin-top: 12px;
+  margin-left: -50px;
+}
+.quiz-form3 div.elso,
+div.masodik {
+  display: flex;
+  margin-top: 12px;
+  margin-left: -25px;
+}
+.quiz-form4 label {
+  display: flex;
+  padding-left: 98px;
+  text-align: center;
+}
+.quiz-form4 input {
+  display: flex;
+  margin-top: 5px;
+}
+div.question {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  gap: 20px;
+  width: 100%;
+}
+div.answer-options {
+  display: flex;
+  margin-left: 150px;
+
+  width: 100%;
+}
+div.kerdes {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+}
+h1 {
+  display: flex;
+  margin-left: 130px;
+}
+.gombike {
+  display: flex;
+  margin-left: 10px;
+}*/

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="1.039" tests="1" failures="1">
+  <testsuite name="Root Suite" timestamp="2025-01-29T03:26:24" tests="1" file="cypress\e2e\logged-in.cy.js" time="1.036" failures="1">
+    <testcase name="An uncaught error was detected outside of a test" time="0.151" classname="An uncaught error was detected outside of a test">
+      <failure message="The following error originated from your test code, not from Cypress.
+
+  &gt; You must provide CYPRESS_USER_EMAIL and CYPRESS_USER_PASSWORD environment variables
+
+When Cypress detects uncaught errors originating from your test code it will automatically fail the current test.
+
+Cypress could not associate this error to any specific test.
+
+We dynamically generated a new test to display this failure." type="Error"><![CDATA[Error: The following error originated from your test code, not from Cypress.
+
+  > You must provide CYPRESS_USER_EMAIL and CYPRESS_USER_PASSWORD environment variables
+
+When Cypress detects uncaught errors originating from your test code it will automatically fail the current test.
+
+Cypress could not associate this error to any specific test.
+
+We dynamically generated a new test to display this failure.
+    at eval (webpack://kocka.xyz/./cypress/e2e/logged-in.cy.js:5:8)
+    at eval (https://kocka.xyz/__cypress/tests?p=cypress\e2e\logged-in.cy.js:115:12)
+    at eval (<anonymous>)
+    at <unknown> (https://kocka.xyz/__cypress/runner/cypress_runner.js:110813:23)
+    at tryCatcher (https://kocka.xyz/__cypress/runner/cypress_runner.js:1777:23)
+    at Object.gotValue (https://kocka.xyz/__cypress/runner/cypress_runner.js:6446:18)
+    at Object.gotAccum (https://kocka.xyz/__cypress/runner/cypress_runner.js:6435:25)
+    at Object.tryCatcher (https://kocka.xyz/__cypress/runner/cypress_runner.js:1777:23)
+    at Promise._settlePromiseFromHandler (https://kocka.xyz/__cypress/runner/cypress_runner.js:1489:31)
+    at Promise._settlePromise (https://kocka.xyz/__cypress/runner/cypress_runner.js:1546:18)]]></failure>
+    </testcase>
+  </testsuite>
+</testsuites>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="45.608" tests="4" failures="2">
+  <testsuite name="Root Suite" timestamp="2025-01-29T03:26:27" tests="0" file="cypress\e2e\logged-out.cy.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="logged out" timestamp="2025-01-29T03:26:27" tests="0" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="desktop" timestamp="2025-01-29T03:26:27" tests="3" time="24.859" failures="1">
+    <testcase name="logged out desktop should display the navigation bar" time="2.637" classname="should display the navigation bar">
+    </testcase>
+    <testcase name="logged out desktop should display the footer" time="0.881" classname="should display the footer">
+    </testcase>
+    <testcase name="logged out desktop should display the home page" time="5.174" classname="should display the home page">
+      <failure message="Timed out retrying after 4000ms: expected &apos;https://www.kocka.xyz/&apos; to equal &apos;https://kocka.xyz/&apos;" type="AssertionError"><![CDATA[AssertionError: Timed out retrying after 4000ms: expected 'https://www.kocka.xyz/' to equal 'https://kocka.xyz/'
+    at Context.eval (webpack://kocka.xyz/./cypress/e2e/logged-out.cy.js:19:15)]]></failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="mobile" timestamp="2025-01-29T03:26:52" tests="1" time="20.741" failures="1">
+    <testcase name="logged out mobile should expand the navigation bar menu" time="5.508" classname="should expand the navigation bar menu">
+      <failure message="Timed out retrying after 4000ms: expected &apos;&lt;span.nav-link&gt;&apos; not to be &apos;visible&apos;" type="AssertionError"><![CDATA[AssertionError: Timed out retrying after 4000ms: expected '<span.nav-link>' not to be 'visible'
+    at Context.eval (webpack://kocka.xyz/./cypress/e2e/logged-out.cy.js:38:51)]]></failure>
+    </testcase>
+  </testsuite>
+</testsuites>

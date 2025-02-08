@@ -4,8 +4,8 @@ body {
 }
 
 code {
-  white-space: pre-wrap; 
-  word-break: break-all; 
+  white-space: pre-wrap;
+  word-break: break-all;
 }
 
 p code {
@@ -31,7 +31,7 @@ p code {
 
 .nav-item.dropdown .dropdown-item .navbar-item {
   width: 100%;
-  padding: .55rem 1.5rem;
+  padding: 0.55rem 1.5rem;
 }
 
 .result-block-container .result-block {
@@ -52,7 +52,6 @@ p code {
   font-weight: 800 !important;
   padding: 0.5rem !important;
   border-radius: 11px !important;
-  
 }
 
 .nav-link:hover {
@@ -60,9 +59,7 @@ p code {
   background-color: white !important;
 }
 
-
 .call-to-action-button {
-
   color: white !important;
   background-color: #4a37be !important;
   font-weight: 800 !important;
@@ -70,10 +67,7 @@ p code {
   border-radius: 11px !important;
 }
 
-
-
 .call-to-action-button-inverse {
-
   color: #4a37be !important;
   background-color: white !important;
   font-weight: 800 !important;
@@ -81,18 +75,14 @@ p code {
   border-radius: 11px !important;
 }
 
-
-
 .call-to-action-column {
   padding-top: 10px;
   color: white;
-  
 
   background-color: #4a37be !important;
   border-radius: 11px !important;
   border: 3px !important;
 }
-
 
 .call-to-action-button:hover {
   color: white !important;
