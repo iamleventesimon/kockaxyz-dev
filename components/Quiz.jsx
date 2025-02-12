@@ -60,6 +60,36 @@ const Content = () => {
               Gömb kvíz
             </a>
           </li>
+          <li>
+            <a
+              href="/negyzet-kviz#section4"
+              style={linkStyle}
+              onMouseOver={(e) => (e.target.style = linkHoverStyle)}
+              onMouseOut={(e) => (e.target.style = linkStyle)}
+            >
+              Négyzet kvíz
+            </a>
+          </li>
+          <li>
+            <a
+              href="/teglalap-kviz#section5"
+              style={linkStyle}
+              onMouseOver={(e) => (e.target.style = linkHoverStyle)}
+              onMouseOut={(e) => (e.target.style = linkStyle)}
+            >
+              Téglalap kvíz
+            </a>
+          </li>
+          <li>
+            <a
+              href="/kor-kviz#section6"
+              style={linkStyle}
+              onMouseOver={(e) => (e.target.style = linkHoverStyle)}
+              onMouseOut={(e) => (e.target.style = linkStyle)}
+            >
+              Kör kvíz
+            </a>
+          </li>
         </ul>
       </nav>
     </div>

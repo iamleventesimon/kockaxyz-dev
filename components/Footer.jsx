@@ -43,7 +43,29 @@ const Footer = () => (
         testId="navbar-cube"
       >
         Gömb kvíz
-      </PageLink>*/}
+      </PageLink>
+      <PageLink
+        href="/negyzet-kviz"
+        className="nav-link footer-end"
+        testId="navbar-cube"
+      >
+        Négyzet kvíz
+      </PageLink>
+      <PageLink
+        href="/teglalap-kviz"
+        className="nav-link footer-end"
+        testId="navbar-cube"
+      >
+        Téglalap kvíz
+      </PageLink>
+      <PageLink
+        href="/kor-kviz"
+        className="nav-link footer-end"
+        testId="navbar-cube"
+      >
+        Kör kvíz
+      </PageLink>
+      */}
     </div>
 
     {/* Alsó linkek egy oszlopban */}

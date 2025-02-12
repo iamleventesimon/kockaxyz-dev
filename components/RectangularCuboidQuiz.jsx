@@ -133,6 +133,7 @@ const RectangularCuboidQuiz = () => {
               </span>
             </label>
           </div>
+
           {submitted && errors.error1 && (
             <p
               style={{
@@ -167,6 +168,7 @@ const RectangularCuboidQuiz = () => {
           />
           <br />
           <br />
+
           {submitted && errors.error2 && (
             <p
               style={{

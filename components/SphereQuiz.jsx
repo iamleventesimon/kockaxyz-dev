@@ -51,21 +51,29 @@ const SphereQuiz = () => {
 
   return (
     <div>
+      <br />
       <center>
         <form onSubmit={handleSubmit}>
           {/* First Question */}
-          <div className="kerdes" style={{ padding: "15px" }}>
-            <p>
+          <div className="kerdes">
+            <p
+              className="elso"
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                marginLeft: "-114px",
+              }}
+            >
               <strong>
                 1. Hogyha egy gömb sugara 3 cm, akkor mennyi a térfogata?
               </strong>
             </p>
+            <br />
             <div
               style={{
                 display: "flex",
                 flexDirection: "column",
                 alignItems: "center",
-                gap: "15px",
               }}
             >
               <div style={{ display: "flex", gap: "100px" }}>
@@ -136,6 +144,7 @@ const SphereQuiz = () => {
                 gap: "15px",
               }}
             >
+              <br />
               <input
                 type="text"
                 value={answer2}
@@ -158,6 +167,7 @@ const SphereQuiz = () => {
               )}
             </div>
           </div>
+          <br />
           {/* Submit Button */}
           <center>
             <button type="submit" className="nav-link call-to-action-button">

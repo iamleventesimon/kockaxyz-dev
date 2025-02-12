@@ -81,7 +81,14 @@ p code {
 .answer-text {
   font-size: 1.1em;
 }
-.quiz-containerkocka {
+.answer-optionskocka label {
+  margin-right: 30px;
+}
+
+.answer-textkocka {
+  font-size: 1.1em;
+}
+/*.quiz-containerkocka {
   max-width: 900px;
   margin: 0 auto;
   padding: 20px;
@@ -93,7 +100,6 @@ p code {
   flex-direction: column;
   align-items: flex-start;
 
-  gap: 20px;
   width: 100%;
 }
 
@@ -102,12 +108,18 @@ p code {
   margin-bottom: 20px;
 }
 
-.answer-optionskocka label {
-  margin-right: 30px;
+
+.input-fieldkocka {
+  display: flex;
+  margin-left: 280px;
 }
 
-.answer-textkocka {
-  font-size: 1.1em;
+.questionkor label {
+  display: flex;
+
+  flex-direction: flex-start;
+
+  width: 100%;
 }
 /* kocka,teglalap,gomb
 .submit-button {

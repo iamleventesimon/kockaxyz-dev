@@ -3,7 +3,7 @@ import "katex/dist/katex.min.css";
 import Latex from "react-latex-next";
 import "../globals.css";
 
-const CubeQuiz = () => {
+const CircleQuiz = () => {
   const [answer1, setAnswer1] = useState("");
   const [answer2, setAnswer2] = useState("");
   const [answer3, setAnswer3] = useState([]);
@@ -18,10 +18,16 @@ const CubeQuiz = () => {
 
   const handleRadioChange = (event) => {
     setAnswer1(event.target.value);
+    if (submitted) {
+      setErrors({ ...errors, error1: "" });
+    }
   };
 
   const handleInputChange = (event) => {
     setAnswer2(event.target.value);
+    if (submitted) {
+      setErrors({ ...errors, error2: "" });
+    }
   };
 
   const handleCheckboxChange1 = (event) => {
@@ -45,28 +51,22 @@ const CubeQuiz = () => {
     // Check answers and generate error messages
     const newErrors = {
       error1:
-        answer1 === "64"
+        answer1 === "25"
           ? "Helyes válasz, gratulálunk!"
           : answer1 === ""
             ? "Kérlek válassz egy választ!"
-            : "Hibás válasz! A helyes válasz: 64.",
+            : "Hibás válasz! A helyes válasz: 25.",
       error2:
-        answer2.trim() === "96"
+        answer2.trim() === "20"
           ? "Helyes válasz, gratulálunk!"
           : answer2.trim() === ""
             ? "Kérlek írd be a választ!"
-            : "Hibás válasz! A helyes válasz: 96.",
+            : "Hibás válasz! A helyes válasz: 20cmπ.",
       error3:
         answer3.length === 2 && answer3.includes("1") && answer3.includes("3")
           ? "Helyes válasz, gratulálunk!"
           : answer3.length === 0
-            ? "Kérlek válasszd ki a helyes válaszokat!"
-            : "Hibás válasz! Próbáld újra.",
-      error4:
-        answer4.length === 1 && answer4.includes("2")
-          ? "Helyes válasz, gratulálunk!"
-          : answer4.length === 0
-            ? "Kérlek válasszd ki a helyes válaszokat!"
+            ? "Kérlek válaszd ki a helyes válaszokat!"
             : "Hibás válasz! Próbáld újra.",
     };
 
@@ -74,62 +74,54 @@ const CubeQuiz = () => {
   };
 
   return (
-    <div className="quiz-containerkocka">
-      <br />
-      <form onSubmit={handleSubmit} className="quiz-formkocka">
-        <div>
-          <strong>
-            1. Ha egy kocka oldalhossza négy centiméter, akkor mekkora a
-            térfogata?
-          </strong>
-        </div>
+    <div className="quiz-container">
+      <form onSubmit={handleSubmit} className="quiz-form">
+        {/* Question 1 */}
 
-        <div>
-          <center>
-            <br />
-            <label>
-              <input
-                type="radio"
-                name="answer1"
-                value="64"
-                checked={answer1 === "64"}
-                onChange={handleRadioChange}
-                className="radio-input"
-              />
-              <span className="answer-textkocka">
-                64 cm<sup>3</sup>
-              </span>
-            </label>
-            <label>
-              <input
-                type="radio"
-                name="answer1"
-                value="32"
-                checked={answer1 === "32"}
-                onChange={handleRadioChange}
-                className="radio-input"
-              />
-              <span className="answer-textkocka">
-                32 cm<sup>3</sup>
-              </span>
-            </label>
-            <label>
-              <input
-                type="radio"
-                name="answer1"
-                value="128"
-                checked={answer1 === "128"}
-                onChange={handleRadioChange}
-                className="radio-input"
-              />
-              <span className="answer-textkocka">
-                128cm<sup>3</sup>
-              </span>
-            </label>
-          </center>
-          <br />
+        <div className="question">
+          <p>
+            <strong>
+              1. Ha egy kör sugara 5 cm, akkor területe hány cm<sup>2</sup>?
+            </strong>
+          </p>
         </div>
         <center>
+          <div className="answer-options">
+            <label>
+              <input
+                type="radio"
+                name="answer1"
+                value="5"
+                checked={answer1 === "5"}
+                onChange={handleRadioChange}
+                className="radio-input"
+              />
+              <span className="answer-text">5π</span>
+            </label>
+            <label>
+              <input
+                type="radio"
+                name="answer1"
+                value="25"
+                checked={answer1 === "25"}
+                onChange={handleRadioChange}
+                className="radio-input"
+              />
+              <span className="answer-text">25π</span>
+            </label>
+            <label>
+              <input
+                type="radio"
+                name="answer1"
+                value="125"
+                checked={answer1 === "125"}
+                onChange={handleRadioChange}
+                className="radio-input"
+              />
+              <span className="answer-text">125π</span>
+            </label>
+          </div>
+
           {submitted && errors.error1 && (
             <p
               style={{
@@ -140,33 +132,32 @@ const CubeQuiz = () => {
             </p>
           )}
         </center>
+        {/* Question 2 */}
 
-        <div className="questionkocka">
+        <div className="question">
           <p>
             <strong>
-              2. Ha egy kocka oldalhossza négy centiméter, akkor hány cm² a
-              felszínének területe?
+              2. Ha egy átlója sugara 10cm, akkor mennyi kerülete?
             </strong>
           </p>
         </div>
         <center>
-          <input
-            type="text"
-            value={answer2}
-            onChange={handleInputChange}
-            className="input-fieldkocka"
-            placeholder="Írd be a választ"
-            style={{
-              padding: "5px",
-              fontSize: "16px",
-              textAlign: "center",
-            }}
-          />
-          <br />
-          <br />
-        </center>
-        <div>
           <center>
+            <input
+              type="text"
+              value={answer2}
+              onChange={handleInputChange}
+              className="input-field"
+              placeholder="Írd be a választ"
+              style={{
+                padding: "5px",
+                fontSize: "16px",
+                textAlign: "center",
+              }}
+            />
+            <br />
+            <br />
+
             {submitted && errors.error2 && (
               <p
                 style={{
@@ -177,16 +168,15 @@ const CubeQuiz = () => {
               </p>
             )}
           </center>
-        </div>
+        </center>
+        {/* Question 3 */}
 
-        <div className="questionkocka">
+        <div className="question">
           <p>
-            <strong>
-              3. Válaszd ki a helyes választ vagy válaszokat: a téglatest
-              térfogata az alábbiak szerint kapható meg:
-            </strong>
+            <strong>3. A kör kerülete</strong>
           </p>
-
+        </div>
+        <div>
           <label>
             <input
               type="checkbox"
@@ -194,8 +184,7 @@ const CubeQuiz = () => {
               checked={answer3.includes("1")}
               onChange={handleCheckboxChange1}
             />
-            A kocka térfogata az oldalak szorzataként kapható meg (
-            <Latex>$V = a^{3}$</Latex>)
+            A sugár kétszeresének és a π-nek a szorzata.
           </label>
           <br />
           <label>
@@ -205,8 +194,7 @@ const CubeQuiz = () => {
               checked={answer3.includes("2")}
               onChange={handleCheckboxChange1}
             />
-            A kocka térfogata az oldalhossz és a testátló szorzataként kapható
-            meg (<Latex>$V = a \cdot d$</Latex>)
+            Az átló kétszeresének és a π-nek a szorzata
           </label>
           <br />
           <label>
@@ -216,11 +204,10 @@ const CubeQuiz = () => {
               checked={answer3.includes("3")}
               onChange={handleCheckboxChange1}
             />
-            Ha ismerjük a testátló hosszát, akkor a
-            <Latex>$D = a \sqrt{3}$</Latex> képlet szerint kaphatjuk meg, ahol
-            <Latex>$D$</Latex> a testátló hossza.
+            Az átló a π-nek a szorzata.
           </label>
         </div>
+
         <center>
           {submitted && errors.error3 && (
             <p
@@ -233,47 +220,6 @@ const CubeQuiz = () => {
           )}
         </center>
 
-        <div className="questionkocka">
-          <p>
-            <strong>
-              4. Válaszd ki a helyes választ vagy válaszokat: a téglatest
-              térfogata az alábbiak szerint kapható meg:
-            </strong>
-          </p>
-
-          <label>
-            <input
-              type="checkbox"
-              value="1"
-              checked={answer4.includes("1")}
-              onChange={handleCheckboxChange2}
-            />
-            A kocka térfogata az oldalak szorzataként kapható meg (
-            <Latex>$V = a^{3}$</Latex>)
-          </label>
-          <br />
-          <label>
-            <input
-              type="checkbox"
-              value="2"
-              checked={answer4.includes("2")}
-              onChange={handleCheckboxChange2}
-            />
-            A kocka térfogata a lapátló négyzetének háromszorosa (
-            <Latex>$V = 3d^{2}$</Latex>)
-          </label>
-          <br />
-          <label>
-            <input
-              type="checkbox"
-              value="3"
-              checked={answer4.includes("3")}
-              onChange={handleCheckboxChange2}
-            />
-            A kocka térfogata a testátló négyzetének háromszorosa (
-            <Latex>$V = 3D^{2}$</Latex>)
-          </label>
-        </div>
         <center>
           {submitted && errors.error4 && (
             <p
@@ -286,7 +232,7 @@ const CubeQuiz = () => {
           )}
         </center>
         <center>
-          <button type="submit" className="nav-link call-to-action-button">
+          <button type="submit" className="nav-link call-to-action-button ">
             Ellenőrizd az összes választ
           </button>
         </center>
@@ -295,4 +241,4 @@ const CubeQuiz = () => {
   );
 };
 
-export default CubeQuiz;
+export default CircleQuiz;
