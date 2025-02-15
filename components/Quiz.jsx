@@ -1,14 +1,9 @@
 import React from "react";
+import "../globals.css";
 
 const Content = () => {
   const linkStyle = {
     textDecoration: "none",
-    color: "black",
-    display: "inline-block",
-    width: "200px",
-    height: "50px",
-    lineHeight: "50px",
-    textAlign: "center",
   };
 
   const linkHoverStyle = {
@@ -18,14 +13,15 @@ const Content = () => {
   const navStyle = {
     display: "flex",
     justifyContent: "center",
-    alignItems: "center",
+    marignleft: "10px",
   };
 
   const listStyle = {
-    padding: 0,
+    display: "flex",
+    flexDirection: "column",
     textAlign: "center",
+    alignItems: "start",
   };
-
   return (
     <div>
       <nav style={navStyle}>

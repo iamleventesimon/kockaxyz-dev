@@ -88,6 +88,20 @@ p code {
 .answer-textkocka {
   font-size: 1.1em;
 }
+/*quiz -menu 
+
+.nav {
+  display: flex;
+  justify-content: "center";
+  margin-left: "10px";
+}
+
+.list {
+  display: "flex";
+  flex-direction: "column";
+  text-align: "center";
+  align-items: "start";
+}
 /*.quiz-containerkocka {
   max-width: 900px;
   margin: 0 auto;
