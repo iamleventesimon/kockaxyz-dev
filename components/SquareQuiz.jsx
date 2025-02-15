@@ -181,50 +181,49 @@ const SquareQuiz = () => {
             </p>
           )}
         </center>
-        <center>
-          {/* Question 3 */}
-          <div className="question">
-            <p>
-              <strong>
-                <Latex>
-                  3. Jelölje a négyzet oldalát $a$ átlóját pedig $d$
-                </Latex>
-                . A négyzet területe:
-              </strong>
-            </p>
-            <label>
-              <input
-                type="checkbox"
-                value="1"
-                checked={answer3.includes("1")}
-                onChange={handleCheckboxChange1}
-              />
-              A négyzet területe az oldala négyzetével egyenlő:
-              <Latex>$T = a^{2}$</Latex>
-            </label>
-            <br />
-            <label>
-              <input
-                type="checkbox"
-                value="2"
-                checked={answer3.includes("2")}
-                onChange={handleCheckboxChange1}
-              />
-              Ha a négyzet átlója adott: <Latex>{"$T = \\frac{d^2}{2}$"}</Latex>
-            </label>
-            <br />
-            <label>
-              <input
-                type="checkbox"
-                value="3"
-                checked={answer3.includes("3")}
-                onChange={handleCheckboxChange1}
-              />
-              Ugyanakkor, ha pedig a kerület adott:{" "}
-              <Latex>{"$T = \\frac{K^2}{16}$"}</Latex>
-            </label>
-          </div>
-        </center>
+
+        {/* Question 3 */}
+        <div className="question">
+          <p>
+            <strong>
+              <Latex>3. Jelölje a négyzet oldalát $a$ átlóját pedig $d$</Latex>.
+              A négyzet területe:
+            </strong>
+          </p>
+          <label>
+            <input
+              type="checkbox"
+              value="1"
+              checked={answer3.includes("1")}
+              onChange={handleCheckboxChange1}
+            />
+            <Latex>
+              A négyzet területe az oldala négyzetével egyenlő: $T = a^{2}$
+            </Latex>
+          </label>
+          <br />
+          <label>
+            <input
+              type="checkbox"
+              value="2"
+              checked={answer3.includes("2")}
+              onChange={handleCheckboxChange1}
+            />
+            Ha a négyzet átlója adott: <Latex>{"$T = \\frac{d^2}{2}$"}</Latex>
+          </label>
+          <br />
+          <label>
+            <input
+              type="checkbox"
+              value="3"
+              checked={answer3.includes("3")}
+              onChange={handleCheckboxChange1}
+            />
+            Ugyanakkor, ha pedig a kerület adott:{" "}
+            <Latex>{"$T = \\frac{K^2}{16}$"}</Latex>
+          </label>
+        </div>
+
         <center>
           {submitted && errors.error3 && (
             <p

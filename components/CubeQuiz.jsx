@@ -74,17 +74,17 @@ const CubeQuiz = () => {
   };
 
   return (
-    <div className="quiz-containerkocka">
+    <div className="quiz-container">
       <br />
-      <form onSubmit={handleSubmit} className="quiz-formkocka">
-        <div>
+      <form onSubmit={handleSubmit} className="quiz-form">
+        <div className="question">
           <strong>
             1. Ha egy kocka oldalhossza négy centiméter, akkor mekkora a
             térfogata?
           </strong>
         </div>
 
-        <div>
+        <div className="answer-options">
           <center>
             <br />
             <label>
@@ -96,7 +96,7 @@ const CubeQuiz = () => {
                 onChange={handleRadioChange}
                 className="radio-input"
               />
-              <span className="answer-textkocka">
+              <span className="answer-text">
                 64 cm<sup>3</sup>
               </span>
             </label>
@@ -109,7 +109,7 @@ const CubeQuiz = () => {
                 onChange={handleRadioChange}
                 className="radio-input"
               />
-              <span className="answer-textkocka">
+              <span className="answer-text">
                 32 cm<sup>3</sup>
               </span>
             </label>
@@ -141,7 +141,7 @@ const CubeQuiz = () => {
           )}
         </center>
 
-        <div className="questionkocka">
+        <div className="question">
           <p>
             <strong>
               2. Ha egy kocka oldalhossza négy centiméter, akkor hány cm² a
@@ -179,7 +179,7 @@ const CubeQuiz = () => {
           </center>
         </div>
 
-        <div className="questionkocka">
+        <div className="question">
           <p>
             <strong>
               3. Válaszd ki a helyes választ vagy válaszokat: a téglatest
@@ -194,8 +194,8 @@ const CubeQuiz = () => {
               checked={answer3.includes("1")}
               onChange={handleCheckboxChange1}
             />
-            A kocka térfogata az oldalak szorzataként kapható meg (
-            <Latex>$V = a^{3}$</Latex>)
+            A kocka térfogata az oldalak szorzataként kapható meg
+            <Latex> ( $V = a^{3}$</Latex>)
           </label>
           <br />
           <label>
@@ -216,9 +216,10 @@ const CubeQuiz = () => {
               checked={answer3.includes("3")}
               onChange={handleCheckboxChange1}
             />
-            Ha ismerjük a testátló hosszát, akkor a
-            <Latex>$D = a \sqrt{3}$</Latex> képlet szerint kaphatjuk meg, ahol
-            <Latex>$D$</Latex> a testátló hossza.
+            <Latex>
+              Ha ismerjük a testátló hosszát, akkor a $D = a \sqrt{3}$ képlet
+              szerint kaphatjuk meg, ahol $D$ a testátló hossza.
+            </Latex>
           </label>
         </div>
         <center>
@@ -233,7 +234,7 @@ const CubeQuiz = () => {
           )}
         </center>
 
-        <div className="questionkocka">
+        <div className="question">
           <p>
             <strong>
               4. Válaszd ki a helyes választ vagy válaszokat: a téglatest
